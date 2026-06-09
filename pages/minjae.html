@@ -1,11 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>강민재 | Developer Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Bebas+Neue&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/minjae.css" />
 </head>
 <body>
-    <h1>2601110275 강민재</h1>
+
+<div class="corner corner--tl"></div>
+<div class="corner corner--tr"></div>
+<div class="corner corner--bl"></div>
+<div class="corner corner--br"></div>
+
+<div class="wrap">
+
+  <!-- nav -->
+  <nav>
+    <span class="nav-logo">KMJ</span>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+
+  <div class="hero fade-up">
+    <p class="hero-tag">// portfolio.init()</p>
+    <h1 class="hero-name">
+      강<span class="accent">민</span>재
+    </h1>
+    <p class="hero-role">Student Developer &nbsp;·&nbsp; KR</p>
+    <div class="hero-divider"></div>
+    <div class="status-bar">
+      <span class="status-dot"></span>
+      한국폴리텍대학 정수캠퍼스 &nbsp;|&nbsp; 1학년 &nbsp;|&nbsp; 현재 성장 중
+    </div>
+  </div>
+
+
+  <section id="about" class="sec-about fade-up">
+    <p class="sec-label">about me</p>
+    <div class="about-box">
+      <p class="about-prompt">&gt; whoami</p>
+      <p class="about-text">
+        <strong>다양한 프로그램을 만들어보고 싶은 개발자</strong>입니다.<br>
+        코드 한 줄 한 줄로 아이디어를 현실로 옮기며, 매일 조금씩 더 나은 개발자로 성장하고 있습니다.<br>
+        언젠가 세상에 기여할 수 있는 소프트웨어를 만드는 것이 목표입니다.<span class="cursor-blink"></span>
+      </p>
+    </div>
+  </section>
+
+
+  <section id="skills" class="sec-skills fade-up">
+    <p class="sec-label">tech stack</p>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <span class="skill-lang">C#</span>
+        <span class="skill-type">OOP / .NET</span>
+      </div>
+      <div class="skill-card">
+        <span class="skill-lang">C</span>
+        <span class="skill-type">System / Low-level</span>
+      </div>
+      <div class="skill-card">
+        <span class="skill-lang">Java</span>
+        <span class="skill-type">OOP / Backend</span>
+      </div>
+      <div class="skill-card">
+        <span class="skill-lang">HTML</span>
+        <span class="skill-type">Web / Markup</span>
+      </div>
+      <div class="skill-card">
+        <span class="skill-lang">CSS3</span>
+        <span class="skill-type">Web / Styling</span>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="contact" class="sec-contact fade-up">
+    <p class="sec-label">contact</p>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1C9.96 21 3 14.04 3 5.5a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.58 1 1 0 01-.25 1.01z"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">phone</div>
+          <div class="contact-val">010-4241-8717</div>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8l10 6 10-6"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">email</div>
+          <div class="contact-val">joryugallery@gmail.com</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <footer>
+    <span>&lt;/&gt; coded by kang minjae</span>
+    <span>2026 &nbsp;·&nbsp; all systems operational</span>
+  </footer>
+
+</div>
+
+<script>
+ 
+  document.querySelectorAll('.fade-up').forEach((el, i) => {
+    el.style.animationDelay = (0.05 + i * 0.15) + 's';
+  });
+
+
+  const sections = document.querySelectorAll('section[id]');
+  const links = document.querySelectorAll('.nav-links a');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        links.forEach(a => {
+          a.style.color = a.getAttribute('href') === '#' + e.target.id
+            ? 'var(--green)' : '';
+        });
+      }
+    });
+  }, { threshold: 0.5 });
+  sections.forEach(s => observer.observe(s));
+
+ 
+  document.querySelectorAll('.skill-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.style.textShadow = '0 0 8px rgba(0,255,180,0.6)';
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.textShadow = '';
+    });
+  });
+</script>
 </body>
 </html>

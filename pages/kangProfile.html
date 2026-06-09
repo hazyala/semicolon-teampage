@@ -1,71 +1,208 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semicolon | Profile - Kang Seok Hyun</title>
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/kang.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>강석현 | AI Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR:wght@300;400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/kang.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="nav-logo">SEMICOLON<span class="point">&nbsp; ;</span></div>
-        <ul class="nav-links">
-            <li><a href="../index.html#hero">INFO</a></li>
-            <li><a href="../index.html#about">ABOUT</a></li>
-            <li><a href="../index.html#members">MEMBERS</a></li>
-            <li><a href="https://github.com/kangseok0427" target="_blank">GITHUB</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <a class="nav-logo" href="../index.html#members">KSH</a>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="../index.html#members">Team</a></li>
+    </ul>
+  </nav>
 
-    <div class="profile-container">
-        <header class="profile-hero">
-            <div class="profile-img-area">
-                <img src="../img/pic.jpg" alt="강석현 프로필 사진">
-            </div>
-            
-            <div class="hero-text">
-                <div class="subtitle">Next-Gen Software Engineer</div>
-                <h1>강석현<span style="color: var(--accent-color);">;</span></h1>
-                <p>
-                    단순히 작동하는 코드를 넘어, 구조적인 우아함과 성능의 한계를 고민합니다. 
-                    Photon Fusion을 이용한 고가용성 멀티플레이어 아키텍처 설계와 
-                    디지털 사운드 프로세싱의 정교한 튜닝에 깊이 몰입하고 있습니다.
-                </p>
-            </div>
-        </header>
+  <!-- HERO -->
+  <section id="home">
+    <div class="glow-orb orb1"></div>
+    <div class="glow-orb orb2"></div>
+    <p class="hero-tag">AI Developer · Builder</p>
+    <h1 class="hero-name">
+      <span class="stroke">KANG</span><br>
+      <span class="accent">SEOK</span><br>
+      <span class="stroke">HYEON</span>
+    </h1>
+    <p class="hero-sub">
+      LLM 에이전트부터 실시간 AI 시스템까지.<br>
+      아이디어를 직접 만들어 증명하는 개발자입니다.
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">프로젝트 보기</a>
+      <a href="https://github.com/kangseok0427" target="_blank" class="btn-ghost">GitHub</a>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      SCROLL
+    </div>
+  </section>
 
-        <section>
-            <h2 class="section-title">CORE TECH STACK</h2>
-            <div class="tag-container">
-                <span class="custom-tag">C# / Unity Engine</span>
-                <span class="custom-tag">Photon Fusion</span>
-                <span class="custom-tag">Real-time Networking</span>
-                <span class="custom-tag">Audio DSP</span>
-                <span class="custom-tag">Modern Web</span>
-                <span class="custom-tag">Git Flow</span>
-            </div>
-        </section>
-
-        <section>
-            <h2 class="section-title">FEATURED PROJECTS</h2>
-            <div class="project-grid">
-                <article class="project-item">
-                    <h3>Multiplayer Architecture</h3>
-                    <p>고주사율 게임 환경을 위한 실시간 동기화 시스템을 설계했습니다. 네트워크 레이턴시를 극복하기 위한 클라이언트 측 예측 모델을 구현했습니다.</p>
-                </article>
-                <article class="project-item">
-                    <h3>Digital Audio Lab</h3>
-                    <p>소프트웨어 기반의 사운드 체인 최적화 프로젝트입니다. VST 엔진의 시그널 흐름을 분석하여 응답 속도를 개선했습니다.</p>
-                </article>
-            </div>
-        </section>
-
-        <footer class="footer-nav">
-            <a href="../index.html#members" class="back-link">&larr; RETURN TO TEAM</a>
-        </footer>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="reveal">
+      <p class="section-label">// About Me</p>
+      <h2 class="section-title">AI로<br>직접<br>만든다</h2>
+      <p class="about-text">
+        인공지능소프트웨어학과 1학년 강석현입니다.
+        LLM 에이전트, 음성 합성, 실시간 스트리밍 시스템 등
+        관심 있는 건 끝까지 직접 구현해봐야 직성이 풀립니다.
+      </p>
+      <p class="about-text">
+        Python을 주력으로 LangChain / LangGraph 기반 AI 파이프라인을
+        설계하고, C# 게임 개발 경험도 보유하고 있습니다.
+      </p>
+      <div class="about-stats">
+        <div class="stat-item">
+          <div class="stat-num">4+</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">2</div>
+          <div class="stat-label">AI Systems</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">Curiosity</div>
+        </div>
+      </div>
     </div>
 
+    <div class="skill-panel reveal">
+      <div class="skill-group">
+        <p class="skill-group-title">Core Languages</p>
+        <div class="skill-tags">
+          <span class="skill-tag hot">Python</span>
+          <span class="skill-tag hot">C#</span>
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <p class="skill-group-title">AI / LLM</p>
+        <div class="skill-tags">
+          <span class="skill-tag hot">LangChain</span>
+          <span class="skill-tag hot">LangGraph</span>
+          <span class="skill-tag hot">Ollama</span>
+          <span class="skill-tag">ChromaDB</span>
+          <span class="skill-tag">RAG</span>
+          <span class="skill-tag">RVC</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <p class="skill-group-title">Tools & Infra</p>
+        <div class="skill-tags">
+          <span class="skill-tag hot">Git</span>
+          <span class="skill-tag hot">GitHub</span>
+          <span class="skill-tag">Conda</span>
+          <span class="skill-tag">OBS</span>
+          <span class="skill-tag">Figma</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="projects-header reveal">
+      <div>
+        <p class="section-label">// Projects</p>
+        <h2 class="section-title">작업물들</h2>
+      </div>
+      <div class="project-count">03</div>
+    </div>
+
+    <div class="project-grid">
+
+      <!-- AIVtuber -->
+      <div class="project-card reveal">
+        <a href="https://github.com/kangseok0427/AIVtuber" target="_blank" class="card-link"></a>
+        <span class="project-arrow">↗</span>
+        <p class="project-num">01</p>
+        <h3 class="project-title">AI VTuber<br>가온</h3>
+        <p class="project-desc">
+          치지직 라이브 스트리밍 AI 버튜버 시스템.
+          LangGraph 에이전트가 채팅을 읽고 판단하며,
+          RVC 음성 클로닝으로 캐릭터 목소리를 실시간 생성.
+          VTube Studio 표정 제어까지 완전 자동화.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">LangGraph</span>
+          <span class="project-tag">Ollama</span>
+          <span class="project-tag">RVC</span>
+          <span class="project-tag">ChromaDB</span>
+          <span class="project-tag">Python</span>
+        </div>
+      </div>
+
+      <!-- SatelliteInfection -->
+      <div class="project-card reveal">
+        <span class="project-arrow">↗</span>
+        <p class="project-num">02</p>
+        <h3 class="project-title">Satellite<br>Infection</h3>
+        <p class="project-desc">
+          직접 기획·개발한 프로젝트.
+          GitHub에서 확인할 수 있습니다.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">C#</span>
+          <span class="project-tag">Python</span>
+        </div>
+      </div>
+
+      <!-- AIVtuberLight -->
+      <div class="project-card reveal">
+        <a href="https://github.com/kangseok0427/AIVtuberLight" target="_blank" class="card-link"></a>
+        <span class="project-arrow">↗</span>
+        <p class="project-num">03</p>
+        <h3 class="project-title">AI VTuber<br>Light</h3>
+        <p class="project-desc">
+          AIVtuber의 경량화 버전.
+          핵심 LLM 파이프라인만 남겨
+          저사양 환경에서도 구동 가능하도록 최적화한 버전.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">LangChain</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Ollama</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-left">
+      <div class="footer-logo">KSH</div>
+      <p>강석현 · 인공지능소프트웨어학과 · 2026</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/kangseok0427" target="_blank">GitHub</a>
+      <a href="mailto:kjminn20001@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 200) current = s.id; });
+      navLinks.forEach(a => { a.classList.toggle('active', a.getAttribute('href') === '#' + current); });
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) setTimeout(() => e.target.classList.add('visible'), i * 100);
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
