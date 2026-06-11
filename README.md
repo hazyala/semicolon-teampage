@@ -10,13 +10,11 @@
 
 | 구분 | 링크 |
 | :--- | :--- |
-| 라이브 사이트 | Vercel 배포 후 링크 추가 예정 |
-| 로컬 메인 페이지 | `index.html` |
-| 팀원 프로필 페이지 | `pages/` 폴더 |
+| 라이브 사이트 | [https://semicolon-teampage.vercel.app/](https://semicolon-teampage.vercel.app/) |
+| 로컬 메인 페이지 | [index.html](./index.html) |
+| 팀원 프로필 페이지 | [pages/](./pages/) |
 
-```md
-| 라이브 사이트 | https://semicolon-teampage.vercel.app/ |
-```
+Vercel 배포 주소가 바뀌면 위 `라이브 사이트` 링크만 새 주소로 교체하면 됩니다.
 
 ## 이 웹사이트는 무엇인가요?
 
@@ -32,13 +30,13 @@
 
 | 페이지 | 설명 |
 | :--- | :--- |
-| `index.html` | 동아리 소개, 멤버 카드, 1학기 활동 성과를 보여주는 메인 페이지 |
-| `pages/heamin.html` | 김해민 프로필 및 작업물 링크 |
-| `pages/kangProfile.html` | 강석현 프로필 및 프로젝트 소개 |
-| `pages/minjae.html` | 강민재 프로필 및 기술 스택 소개 |
-| `pages/suyong.html` | 박수용 프로필, 프로젝트, 스택 소개 |
-| `pages/dhj.html` | 도형준 프로필, 기술 인벤토리, 프로젝트 소개 |
-| `pages/gaeun.html` | 이가영 프로필, 기술 스택, 연락처 소개 |
+| [index.html](./index.html) | 동아리 소개, 멤버 카드, 1학기 활동 성과를 보여주는 메인 페이지 |
+| [pages/heamin.html](./pages/heamin.html) | 김해민 프로필 및 작업물 링크 |
+| [pages/kangProfile.html](./pages/kangProfile.html) | 강석현 프로필 및 프로젝트 소개 |
+| [pages/minjae.html](./pages/minjae.html) | 강민재 프로필 및 기술 스택 소개 |
+| [pages/suyong.html](./pages/suyong.html) | 박수용 프로필, 프로젝트, 스택 소개 |
+| [pages/dhj.html](./pages/dhj.html) | 도형준 프로필, 기술 인벤토리, 프로젝트 소개 |
+| [pages/gaeun.html](./pages/gaeun.html) | 이가영 프로필, 기술 스택, 연락처 소개 |
 
 ## 메인 페이지 주요 내용
 
@@ -73,9 +71,9 @@ SEMICOLON-TEAMPAGE
 
 ### 파일 관리
 
-- HTML은 페이지 역할에 맞게 `index.html` 또는 `pages/` 폴더에 작성합니다.
-- CSS는 `css/` 폴더의 외부 스타일시트로 분리합니다.
-- 이미지가 필요한 경우 `img/` 폴더에 저장하고 상대 경로로 연결합니다.
+- HTML은 페이지 역할에 맞게 [index.html](./index.html) 또는 [pages/](./pages/) 폴더에 작성합니다.
+- CSS는 [css/](./css/) 폴더의 외부 스타일시트로 분리합니다.
+- 이미지가 필요한 경우 [img/](./img/) 폴더에 저장하고 상대 경로로 연결합니다.
 
 ### Git 작업 방식
 
