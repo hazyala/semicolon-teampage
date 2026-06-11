@@ -14,10 +14,8 @@
 | 로컬 메인 페이지 | `index.html` |
 | 팀원 프로필 페이지 | `pages/` 폴더 |
 
-Vercel 배포 후 아래 칸에 실제 주소를 넣으면 됩니다.
-
 ```md
-| 라이브 사이트 | https://your-vercel-domain.vercel.app/ |
+| 라이브 사이트 | https://semicolon-teampage.vercel.app/ |
 ```
 
 ## 이 웹사이트는 무엇인가요?
