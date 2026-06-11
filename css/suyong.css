@@ -225,3 +225,85 @@ body {
     .hero-title { font-size: 3.5rem; }
     .main-content { padding-left: 30px; }
 }
+
+@media (max-width: 640px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 22px 20px 0;
+        font-size: 0.68rem;
+    }
+
+    .main-content {
+        min-height: calc(100vh - 132px);
+        height: auto;
+        padding: 34px 20px 176px;
+        justify-content: center;
+    }
+
+    .hero-title {
+        font-size: clamp(2.8rem, 15vw, 3.7rem);
+        line-height: 0.96;
+        letter-spacing: -1px;
+        overflow-wrap: anywhere;
+    }
+
+    .section-title {
+        font-size: clamp(2.4rem, 13vw, 3.5rem);
+    }
+
+    .stack-list span {
+        font-size: 0.95rem;
+    }
+
+    .floating-nav {
+        left: 14px;
+        right: 14px;
+        bottom: 14px;
+        transform: none;
+        overflow: visible;
+        border-radius: 12px;
+        padding: 8px;
+    }
+
+    .nav-container {
+        width: 100%;
+        min-width: 0;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .nav-logo {
+        display: none;
+    }
+
+    .nav-item {
+        white-space: nowrap;
+        padding: 10px 8px;
+        font-size: 0.76rem;
+        text-align: center;
+        border-radius: 9px;
+        background: rgba(255, 255, 255, 0.06);
+    }
+
+    .nav-item.home,
+    .nav-item.yellow {
+        justify-content: center;
+    }
+
+    .nav-item.yellow {
+        grid-column: span 2;
+    }
+
+    .nav-divider {
+        display: none;
+    }
+}

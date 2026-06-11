@@ -76,7 +76,7 @@
     backdrop-filter: blur(10px);
     margin-bottom: 4rem;
   }
-  .nav-logo { font-family: var(--display); font-size: 1.5rem; color: var(--green); letter-spacing: 3px; }
+  .nav-logo { font-family: var(--display); font-size: 1.5rem; color: var(--green); letter-spacing: 3px; text-decoration: none; }
   .nav-links { display: flex; gap: 1.5rem; }
   .nav-links a {
     font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
@@ -219,8 +219,30 @@
 
   
   @media (max-width: 540px) {
+    .wrap { padding: 0 1rem 4rem; }
+    nav {
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 2.8rem;
+    }
     .contact-grid { grid-template-columns: 1fr; }
-    .nav-links { gap: .8rem; }
-    .hero-name { font-size: clamp(4rem,18vw,6rem); }
+    .nav-links {
+      gap: .8rem;
+      overflow-x: auto;
+      white-space: nowrap;
+      width: 100%;
+      max-width: 100%;
+      padding-bottom: 2px;
+    }
+    .hero-name {
+      font-size: clamp(3.4rem,18vw,6rem);
+      letter-spacing: 1px;
+      overflow-wrap: anywhere;
+    }
+    .hero-role { letter-spacing: 2px; }
+    .about-box { padding: 1.4rem; }
+    .skill-card { width: 100%; }
+    .contact-card { padding: 1rem; }
     .corner { width: 36px; height: 36px; }
   }

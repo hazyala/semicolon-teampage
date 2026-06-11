@@ -575,3 +575,78 @@ footer {
   }
 }
 .nav-logo { text-decoration: none; }
+
+@media (max-width: 640px) {
+  nav {
+    padding: 14px 18px;
+    gap: 16px;
+  }
+
+  .nav-links {
+    gap: 14px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 2px;
+  }
+
+  .nav-links a {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+  }
+
+  #home {
+    padding: 110px 20px 70px;
+    min-height: auto;
+  }
+
+  .hero-name {
+    font-size: clamp(4rem, 24vw, 7rem);
+    letter-spacing: 0;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .btn-primary,
+  .btn-ghost {
+    text-align: center;
+    padding: 14px 18px;
+  }
+
+  .hero-scroll {
+    position: static;
+    margin-top: 48px;
+  }
+
+  #about,
+  #projects {
+    min-height: auto;
+    padding: 78px 20px;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .skill-panel,
+  .project-card {
+    padding: 28px 22px;
+  }
+
+  .projects-header {
+    margin-bottom: 36px;
+  }
+
+  .project-count {
+    font-size: 4rem;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

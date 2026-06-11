@@ -1096,22 +1096,152 @@ body {
 }
 
 @media (max-width: 600px) {
-    .nav-item {
+    * {
+        cursor: auto;
+    }
+
+    .custom-cursor {
         display: none;
     }
 
-    .nav-item:nth-child(4),
-    .nav-item:last-child {
-        display: inline-block;
+    .top-nav {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 16px 5vw;
+    }
+
+    .nav-brand {
+        font-size: 19px;
+    }
+
+    .nav-links {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 6px;
+        width: 100%;
+        overflow: visible;
+        white-space: normal;
+    }
+
+    .nav-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 4px;
+        font-size: 9px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .nav-item:nth-child(3) {
+        display: none;
     }
 
     .landing-name {
-        font-size: 18vw;
+        font-size: clamp(58px, 16vw, 86px);
+        letter-spacing: 0;
     }
 
     .section-landing {
         height: auto;
         min-height: 100vh;
+        overflow: visible;
+    }
+
+    .landing-top {
+        padding-top: 126px;
+        flex: none;
+        min-height: 52vh;
+    }
+
+    .hero-3d-group {
+        display: none;
+    }
+
+    .section-skills-radial {
+        height: auto;
+        min-height: 100vh;
+        padding: 110px 5vw 80px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+        align-items: stretch;
+    }
+
+    .skills-label,
+    .center-text,
+    .node {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        transform: none;
+        text-align: left;
+        max-width: none;
+        white-space: normal;
+    }
+
+    .center-text {
+        order: -1;
+        font-size: clamp(30px, 11vw, 44px);
+        line-height: 1.1;
+        margin-bottom: 18px;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .node h3,
+    .node p {
+        white-space: normal;
+    }
+
+    .node h3 {
+        font-size: clamp(18px, 6vw, 24px);
+    }
+
+    .skill-lines-svg,
+    #three-canvas {
+        display: none;
+    }
+
+    .section-strengths {
+        padding: 10vh 5vw;
+        overflow: hidden;
+    }
+
+    .carousel-scene {
+        height: auto;
+        perspective: none;
+        display: block;
+    }
+
+    .ring {
+        width: 100%;
+        height: auto;
+        transform: none !important;
+        animation: none;
+        display: grid;
+        gap: 18px;
+    }
+
+    .cs,
+    .cs:nth-child(1),
+    .cs:nth-child(2),
+    .cs:nth-child(3),
+    .cs:nth-child(4) {
+        position: relative;
+        width: 100%;
+        height: auto;
+        transform: none;
+    }
+
+    .cw {
+        min-height: 300px;
+        border-radius: 14px;
+    }
+
+    .carousel-dots {
+        display: none;
     }
 
     .section-works {
