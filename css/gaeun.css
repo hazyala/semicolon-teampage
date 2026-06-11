@@ -384,7 +384,7 @@ body {
    ============================ */
 @media (max-width: 600px) {
   .container {
-    padding: 48px 18px 32px;
+    padding: 72px 18px 32px;
   }
 
   .skill-grid {
@@ -397,6 +397,32 @@ body {
 
   .name-text {
     font-size: 2rem;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-badge {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .skill-card {
+    grid-template-columns: 36px 1fr;
+    padding: 18px;
+  }
+
+  .contact-links {
+    flex-direction: column;
+  }
+
+  .contact-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .team-back {
+    top: 14px;
+    left: 18px;
+    font-size: 0.68rem;
   }
 }
 /* ============================
@@ -429,3 +455,19 @@ body {
 }
 .team-back { position: fixed; top: 20px; left: 24px; z-index: 20; color: var(--green); font-family: var(--font-mono); font-size: 0.75rem; text-decoration: none; letter-spacing: 0.08em; }
 .team-back:hover { color: var(--text); }
+
+@media (hover: none), (pointer: coarse) {
+  * { cursor: auto !important; }
+  .cursor-dot,
+  .cursor-ring {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .team-back {
+    top: 14px;
+    left: 18px;
+    font-size: 0.68rem;
+  }
+}

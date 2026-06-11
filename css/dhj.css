@@ -428,3 +428,73 @@ nav ul li a:hover {
         min-height: 300px;
     }
 }
+
+@media (max-width: 640px) {
+    header {
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 18px 20px;
+    }
+
+    nav ul {
+        width: 100%;
+        gap: 18px;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 2px;
+    }
+
+    section {
+        min-height: auto;
+        padding: 96px 0 72px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .hero {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .subtitle,
+    .description {
+        font-size: 1rem;
+    }
+
+    .logic-cube-model {
+        width: 170px;
+        height: 170px;
+    }
+
+    .face.front { transform: translateZ(85px); }
+    .face.back { transform: translateZ(-85px) rotateY(180deg); }
+    .face.left { transform: translateX(-85px) rotateY(-90deg); }
+    .face.right { transform: translateX(85px) rotateY(90deg); }
+    .face.top { transform: translateY(-85px) rotateX(90deg); }
+    .face.bottom { transform: translateY(85px) rotateX(-90deg); }
+
+    .right-side {
+        padding: 34px 20px;
+    }
+
+    .skills-dashboard-grid,
+    .detail-grid {
+        gap: 24px;
+    }
+
+    .project-btn,
+    .github-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contact-card {
+        padding: 28px 22px;
+    }
+
+    .card-name {
+        font-size: clamp(2.1rem, 14vw, 3rem);
+    }
+}
